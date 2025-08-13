@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
+
+    <!-- Banner with Navigation -->
+    <header class="banner">
+        <div class="banner-overlay"></div>
+        <nav class="navbar">
             <h1 class="logo">Rakshan V P</h1>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -17,47 +19,53 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Hi, I'm Rakshan 👋</h2>
+        <div class="banner-content">
+            <h1>Hi, I'm Rakshan 👋</h1>
             <p>Aerospace Engineer | Robotics & UAV Enthusiast</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
-    </section>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I’m a 3rd-year B.Tech Aerospace Engineering student passionate about UAVs, robotics, and vehicle dynamics.
-            I love building things — from self-balancing robots to swarm drone systems — and exploring new tech.
-        </p>
+    <section id="about">
+        <img src="your-image.jpg" alt="Rakshan V P">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I’m a 3rd-year B.Tech Aerospace Engineering student passionate about UAVs, robotics, and vehicle dynamics.
+                I love building things — from self-balancing robots to swarm drone systems — and exploring new tech.
+                My expertise includes control systems, embedded programming, and 3D design.
+            </p>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
+    <section id="projects">
+        <h2 style="text-align:center;">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
+                <img src="self-balancing-robot.jpg" alt="Self-Balancing Robot">
                 <h3>Self-Balancing Robot</h3>
                 <p>Dual IMU system with advanced control algorithms for stability.</p>
+                <a href="https://github.com/yourusername/self-balancing-robot" target="_blank">GitHub Repo</a>
             </div>
             <div class="project-card">
+                <img src="swarm-drone.jpg" alt="Swarm Drone System">
                 <h3>Swarm Drone System</h3>
                 <p>Unified microcontroller board & GUI for swarm drone coordination.</p>
+                <a href="https://github.com/yourusername/swarm-drone-system" target="_blank">GitHub Repo</a>
             </div>
             <div class="project-card">
+                <img src="hydrofoil.jpg" alt="Hydrofoil Control System">
                 <h3>Hydrofoil Control System</h3>
                 <p>Custom control algorithms for stable and efficient hydrofoil navigation.</p>
+                <a href="https://github.com/yourusername/hydrofoil-control" target="_blank">GitHub Repo</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact">
         <h2>Contact Me</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
@@ -70,5 +78,6 @@
     <footer>
         <p>© 2025 Rakshan V P | Built with ❤️</p>
     </footer>
+
 </body>
 </html>
