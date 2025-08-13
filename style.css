@@ -28,8 +28,11 @@ body {
     background: rgba(0, 0, 0, 0.2);
 }
 .navbar {
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: flex-end; /* Push items to the right */
+    justify-content: flex-end;
+    align-items: center;
     padding: 1rem 2rem;
 }
 .navbar ul {
