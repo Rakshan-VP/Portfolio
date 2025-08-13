@@ -15,7 +15,7 @@ body {
 .banner {
     position: relative;
     height: 100vh;
-    background: url("https://raw.githubusercontent.com/Rakshan-VP/Portfolio/main/banner.jpg") center/cover no-repeat;
+    background: url("banner.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,17 +147,32 @@ body {
 
 /* Contact */
 #contact {
+    position: relative;
     padding: 3rem 2rem;
     max-width: 800px;
     margin: auto;
     text-align: center;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.05);
+    white-space: nowrap;
+    pointer-events: none;
 }
 #contact input,
 #contact textarea {
     width: 100%;
     padding: 0.7rem;
     margin: 0.5rem 0;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 #contact button {
